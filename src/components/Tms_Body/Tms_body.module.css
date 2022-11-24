@@ -1,0 +1,48 @@
+.body {
+  height: 85%;
+  background-color: whitesmoke;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.chart {
+  padding-top: 30px;
+  width: 70%;
+  height: 50%;
+}
+.ex1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  
+}
+.graph1 {
+  background-color: black;
+  width:50%;
+}
+.graph2 {
+  width: 50%;
+}
+.table {
+  width:99%;
+  height:100%;
+  border-top: solid 2px #a8a863;
+  border-bottom: solid 2px #a88f63;
+  background-color: #fdfdfd;
+  margin-left: 4px;
+  table-layout:fixed;
+}
+th{
+  color: #b39064;
+  border-right: solid 1px rgba(168, 143, 99, .5);
+  border-bottom: solid 1px rgba(168, 143, 99, .5);
+  font-size: 0.7em;
+}
+td {
+  text-align: center;
+  border-right: solid 1px rgba(168, 143, 99, .5);
+  border-bottom: solid 1px rgba(168, 143, 99, .5);
+  font-size: 0.9em;
+}
+
