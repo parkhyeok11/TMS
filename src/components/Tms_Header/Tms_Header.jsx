@@ -16,7 +16,7 @@ const TmsHeader = (props) => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <a href=""><img className={styles.img} src="images/android-icon-96x96.png"></img></a>
-        <h1><a href="" className={styles.title}>굴뚝자동측정기기(TMS)측정결과공개</a></h1>
+        <h1><a href="" className={styles.title}>임시 TMS 데이터 스트리밍 시각화</a></h1>
       </div>
     </header>
     <div className={styles.modal}>
