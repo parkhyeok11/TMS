@@ -43,9 +43,9 @@ socket.onmessage = function (event) {
   }
   else{    
 // 5분 주기 if 조건
-if((new Date().getMinutes() % 10 ===0) && (new Date().getSeconds() <= 1)  || (new Date().getMinutes() % 10===5)&& (new Date().getSeconds() <=1)){
+// if((new Date().getMinutes() % 10 ===0) && (new Date().getSeconds() <= 1)  || (new Date().getMinutes() % 10===5)&& (new Date().getSeconds() <=1)){
 // 2분 주기 if 조건 
-//  if((new Date().getMinutes() % 2 ===0) && (new Date().getSeconds() <= 1)){ 
+  if((new Date().getMinutes() % 2 ===0) && (new Date().getSeconds() <= 1)){ 
     if(push_cnt === 48){
         Graph.shift();
         push_cnt = 47;
@@ -193,7 +193,7 @@ const TmsBody = (props) => {
       </div>
       <div className={styles.ex1}>
         <div className={styles.graph1}>
-        <iframe name="X-Frame-Options" value=""src="http://61.98.41.64:60033/#/notebook/2HJ5PH8TV/paragraph/paragraph_1669372170486_1204146585?asIframe" height="100%" width="100%" ></iframe>
+        <iframe src="http://61.98.41.64:60033/#/notebook/2HJ5PH8TV/paragraph/paragraph_1669372170486_1204146585?asIframe" height="425px" width="100%" ></iframe>
         </div>
         <div className={styles.graph2}>
         <table className={styles.table}>
