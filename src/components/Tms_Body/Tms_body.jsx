@@ -148,6 +148,36 @@ const TmsBody = (props) => {
         },1000)
           return res;
         })()
+      },
+      {
+        name: 'Dynamic Duo',
+        type: 'line',
+        data: (function () { // 꺽은선 데이터
+        let res = [];
+        let len = 9;
+        setTimeout(function(){
+          while (len >=0) {
+            res.push(+(Math.random()*30).toFixed(1));
+            len--;
+          }
+        },1000)
+          return res;
+        })()
+      },
+      {
+        name: 'Dynamic Third',
+        type: 'line',
+        data: (function () { // 꺽은선 데이터
+        let res = [];
+        let len = 9;
+        setTimeout(function(){
+          while (len >=0) {
+            res.push(+(Math.random()*30).toFixed(1));
+            len--;
+          }
+        },1000)
+          return res;
+        })()
       }
     ]
   }
@@ -156,9 +186,14 @@ const TmsBody = (props) => {
     const axisData = (new Date()).toLocaleTimeString().replace(/^\D*/,'');
     const newOption = _.cloneDeep(options); 
     const data0 = newOption.series[0].data;
-    //const data1 = newOption.series[1].data;
+    const data1 = newOption.series[1].data;
+    const data2 = newOption.series[2].data;
     data0.shift();
     data0.push(+(tempy).toFixed(1));
+    data1.shift();
+    data1.push(+(Math.random()*30).toFixed(1));
+    data2.shift();
+    data2.push(+(Math.random()*30).toFixed(1));
     /*
     data0.shift();
     data0.push(0);
@@ -193,7 +228,7 @@ const TmsBody = (props) => {
       </div>
       <div className={styles.ex1}>
         <div className={styles.graph1}>
-        <iframe src="http://61.98.41.64:60033/#/notebook/2HJ5PH8TV/paragraph/paragraph_1669372170486_1204146585?asIframe" height="425px" width="100%" ></iframe>
+        <iframe src="http://61.98.41.64:60033/#/notebook/2HJ5PH8TV/paragraph/paragraph_1669372170486_1204146585?asIframe" height="100%" width="100%" ></iframe>
         </div>
         <div className={styles.graph2}>
         <table className={styles.table}>
